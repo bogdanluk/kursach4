@@ -290,7 +290,7 @@
     wow.init();
   </script>
   <script>
-    window.onload = changeMusic();
+    
     function changeMusic(){
       var music = document.getElementById('bgMusic');
       if(music.paused){
@@ -303,6 +303,7 @@
         document.getElementById("stopMusic").style.display="block";
       }
     }
+    window.onload = changeMusic();
   </script>
   <script>
     console.log(window.innerWidth);
