@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/style.css">
   <bgsound src="music/bgSound.mp3" loop="-1" volume="0" balance="0"></bgsound>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0" class="scrollspy">
+<body data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0" class="scrollspy" onload="changeMusic()">
 
   <audio autoplay loop id="bgMusic">
     <source src="music/bgMusic.mp3" type="audio/mpeg">
@@ -290,9 +290,9 @@
     wow.init();
   </script>
   <script>
-    
+    var music = document.getElementById('bgMusic');
+    music.volume = 0.2;
     function changeMusic(){
-      var music = document.getElementById('bgMusic');
       if(music.paused){
         music.play();
         document.getElementById("playMusic").style.display="block";
