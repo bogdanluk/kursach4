@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/style.css">
   <bgsound src="music/bgSound.mp3" loop="-1" volume="0" balance="0"></bgsound>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0" class="scrollspy" onload="document.getElemById("bgMusic").play()">
+<body data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0" class="scrollspy" onload="startMusic()">
 
   <audio autoplay loop id="bgMusic">
     <source src="music/bgMusic.mp3" type="audio/mpeg">
@@ -302,6 +302,9 @@
         document.getElementById("playMusic").style.display="none";
         document.getElementById("stopMusic").style.display="block";
       }
+    }
+    function startMusic(){
+      music.play();
     }
   </script>
   <script>
