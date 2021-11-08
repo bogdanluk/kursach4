@@ -294,7 +294,7 @@
       var select1 = document.getElementById("selectDomen");
       var select2 = document.getElementById("selectHost");
       var payadmin = document.getElementById("adminSalary");
-      if(payadmin.value == ""){
+      if(payadmin.value < 1){
         payadmin.value = 0;
       }
       var result = parseInt(select1.value) + parseInt(select2.value) + parseInt(payadmin.value);
