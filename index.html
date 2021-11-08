@@ -175,7 +175,7 @@
             <option value="9600">Мощный</option>
           </select>
           <div class="form-floating form-floating-lg mb-3">
-            <input type="text" class="form-control form-control-lg red-border bg-transparent mb-3" id="adminSalary" placeholder=" " onchange="sumCost()">
+            <input type="number" class="form-control form-control-lg red-border bg-transparent mb-3" id="adminSalary" placeholder=" " onchange="sumCost()">
             <label for="adminSalary">Введите зарплату админа</label>
           </div>
           <h3>Итого: <span id="sumPrice" class="fw-bold">0</span> руб/год</h3>
@@ -294,7 +294,7 @@
       var select1 = document.getElementById("selectDomen");
       var select2 = document.getElementById("selectHost");
       var payadmin = document.getElementById("adminSalary");
-      if(payadmin.value == ""){
+      if(payadmin.value < 1){
         payadmin.value = 0;
       }
       var result = parseInt(select1.value) + parseInt(select2.value) + parseInt(payadmin.value);
