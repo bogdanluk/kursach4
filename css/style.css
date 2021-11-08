@@ -194,10 +194,10 @@ body{
   border: 2px solid #f8d7da;
 }
 
-
-
-
-
+.form1 .form-control:focus{
+  border: 2px solid #f8d7da;
+  box-shadow: 0 0 0 0.25rem #f8d7da;
+}
 
 @media(min-width: 320px){
   body{
