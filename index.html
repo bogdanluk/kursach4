@@ -176,7 +176,7 @@
           </select>
           <div class="form-floating form-floating-lg mb-3">
             <input type="number" class="form-control form-control-lg red-border bg-transparent mb-3" id="adminSalary" placeholder=" " onchange="sumCost()">
-            <label for="adminSalary">Введите зарплату админа</label>
+            <label for="adminSalary">Введите зарплату админа в месяц</label>
           </div>
           <div class="form-floating form-floating-lg mb-3">
             <input type="number" class="form-control form-control-lg red-border bg-transparent mb-3" id="advBudget" placeholder=" " onchange="sumCost()">
@@ -305,7 +305,7 @@
       if(advBudget.value < 1){
         advBudget.value = 0;
       }
-      var result = parseInt(select1.value) + parseInt(select2.value) + parseInt(advBudget.value) + parseInt(payadmin.value) *12;
+      var result = parseInt(select1.value) + parseInt(select2.value) + parseInt(advBudget.value) + parseInt(payadmin.value) * 12;
       document.getElementById("sumPrice").innerHTML = result;
     }
   </script>
