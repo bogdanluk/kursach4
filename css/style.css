@@ -101,6 +101,10 @@ body{
   letter-spacing:2px;
 }
 
+.text-justify{
+  text-align: justify;
+}
+
 .col-card{
   max-width: 300px;
   min-width: 300px;
