@@ -81,10 +81,6 @@ body{
   min-height: 100vh;
 }
 
-.col-features{
-  min-width: 300px;
-}
-
 .form1{
   max-width: 900px;
 }
@@ -103,6 +99,16 @@ body{
 
 .text-justify{
   text-align: justify;
+}
+
+.plus-container{
+  max-width: 1000px;
+}
+
+.plus-card{
+  border: 0.2em solid #f8d7da;
+  box-shadow: 0 0 1em 0 #f8d7da, 0 0 1em 0 #f8d7da;
+  border-radius: 2em;
 }
 
 .col-card{
@@ -212,7 +218,7 @@ body{
   margin-top: 30px;
   position: relative;
   max-width: 300px;
-  box-shadow: 0 0 1em 0.1em #f8d7da;
+  box-shadow: 0 0 1em 0.1em #f8d7da, 0 0 1em 0.1em #f8d7da;
   border: 2px solid #f8d7da;
   border-radius: 0.5em;
 }
@@ -231,6 +237,8 @@ body{
   line-height: 1;
   opacity: 0.5;
 }
+
+
 
 
 
