@@ -257,7 +257,7 @@ body{
     font-size: 1.2em;
   }
   .plusDescription{
-    font-size: 0.6em;
+    font-size: 1em;
   }
 }
 @media(min-width: 576px){
