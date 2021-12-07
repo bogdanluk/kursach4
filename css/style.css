@@ -256,6 +256,9 @@ body{
   .prettyH1{
     font-size: 1.2em;
   }
+  .plus-card h3{
+    font-size: 1em;
+  }
 }
 @media(min-width: 576px){
   body{
